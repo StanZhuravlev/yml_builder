@@ -3,11 +3,17 @@
 
 module YmlBuilder
   class Yml
+    # Ссылка на класс, описывающий контакты Интернет-магазина
     attr_reader :shop
+    # Ссылка на класс, описывающий категории
     attr_reader :categories
+    # Ссылка на класс, описывающий валюты
     attr_reader :currencies
-    attr_reader :local_delivery_cost
+    # Ссылка на класс, управляющий товарами (офферами)
     attr_reader :offers
+    # Переменая, хранящая стоимость доставки в локации расположения Интернет-магазина
+    attr_reader :local_delivery_cost
+
 
     def initialize
       @stats = ::YmlBuilder::Stats.new
@@ -18,15 +24,45 @@ module YmlBuilder
       @local_delivery_cost = nil
     end
 
+    # Метод устанавливает стоимость доставки в месте локации магазина. Например, если магазин находится в Москве,
+    #  то при указанни данной стоимости, она будет показана покупателям в этом же районе.
+    #
+    # @param [Float] value стоимость доставки в месте локации магазина
+    # @return [None] нет
     def local_delivery_cost=(value)
       @local_delivery_cost = value
     end
 
-    def lds_to_yml(ident = 4)
-      return "" if @local_delivery_cost.nil?
-      ' '.rjust(ident, ' ') + "<local_delivery_cost>#{@local_delivery_cost}</local_delivery_cost>\n"
+    # Метод возвращает статистику по результатам генерации прайс-листа: всего товаров, товаров в наличии, стоимость
+    #  товаров в наличии (без учета количества)
+    #
+    # @return [None] нет
+    def stats
+      @stats.stats
     end
 
+    # Метод возвращает текстовую строку с прайс-листом в формате Яндекс.Маркет
+    #
+    # @return [String] строка с прайс-листом в формате utf-8
+    def to_yml
+      out = @shop.to_yml
+      out.gsub!(/^\s{0,100}\{replace\_currencies\}/, @currencies.to_yml)
+      out.gsub!(/^\s{0,100}\{replace\_categories\}/, @categories.to_yml)
+      out.gsub!(/^\s{0,100}\{replace\_local\_delivery\_cost\}[\n\r]/, lds_to_yml)
+      out.gsub!(/^\s{0,100}\{replace\_offers\}/, @offers.to_yml)
+
+      add_header_footer(out)
+    end
+
+    # Метод для записи прайслиста в файл. Запись осущесствится в кодировке windows-1251
+    #
+    # @param [String] filename название файла для записи прайс-листа
+    # @return [None] нет
+    def save(filename)
+      File.open(filename, 'w:windows-1251') {|f| f.write(to_yml) }
+    end
+
+    private
 
     def add_header_footer(text)
       out = Array.new
@@ -38,22 +74,9 @@ module YmlBuilder
       out.join("\n")
     end
 
-    def stats
-      @stats.stats
-    end
-
-    def to_yml
-      out = @shop.to_yml
-      out.gsub!(/^\s{0,100}\{replace\_currencies\}/, @currencies.to_yml)
-      out.gsub!(/^\s{0,100}\{replace\_categories\}/, @categories.to_yml)
-      out.gsub!(/^\s{0,100}\{replace\_local\_delivery\_cost\}[\n\r]/, lds_to_yml)
-      out.gsub!(/^\s{0,100}\{replace\_offers\}/, @offers.to_yml)
-
-      add_header_footer(out)
-    end
-
-    def save(filename)
-      File.open(filename, 'w:windows-1251') {|f| f.write(to_yml) }
+    def lds_to_yml(ident = 4)
+      return "" if @local_delivery_cost.nil?
+      ' '.rjust(ident, ' ') + "<local_delivery_cost>#{@local_delivery_cost}</local_delivery_cost>\n"
     end
 
   end

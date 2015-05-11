@@ -10,8 +10,9 @@ Gem::Specification.new do |spec|
   spec.email         = ["stan@post-api.ru"]
 
   spec.summary       = %q{Набор классов для формирования прайс-листов в формате Яндекс YAML}
-  spec.description   = %q{Набор классов для формирования и валидации прайс-листов в формате Яндекс YAML.
-                          В текущей версии поддерживает только упрощенные товарные карточки.}
+  spec.description   = %q{Библиотека содержит набор классов для формирования и валидации прайс-листов
+                          в формате Яндекс YAML (Яндекс.Маркет).
+                          Текущая версия поддерживает только упрощенные товарные карточки.}
   spec.homepage      = "https://github.com/StanZhuravlev/yml_builder"
   spec.license       = "MIT"
   spec.required_ruby_version = '~> 2.2.1'
@@ -19,7 +20,7 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
