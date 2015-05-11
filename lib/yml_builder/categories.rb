@@ -1,7 +1,12 @@
+# Класс обеспечивает добавление в парйс-лист Yandex.Market категорий Интернет-магазинов
+
 module YmlBuilder
   class Categories
     # Переменная содержит список id категорий, для которых необходимо формировать прайс-лист.
     # Если переменная пуста, то включаются все категории
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.categories.filter = [1, 3, 4, 5]
     attr_reader :filter
 
     def initialize(stats)
@@ -9,6 +14,17 @@ module YmlBuilder
       init_class
     end
 
+    # Метод добавляет категорию Интернет-магазина в прайс-лист с учетом выставленных в значении filter настроек.
+    #
+    # @param [Hash] opts параметры категорий Интернет-магазина
+    # @option opts [Object] :id идентификатор категории (обязательно)
+    # @option opts [Integer] :parent_id идентификатор родительской категории (опционально)
+    # @option opts [String] :name название категории (обязательно)
+    # @return [Boolean] true, если категория была добавлена, и false, если добавление запрещено в filter
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.categories.add(id: 1, 'Игрушки')
+    #   price.categories.add(id: 2, 'Игрушки для девочек', parent_id: 1)
     def add(opts = {})
       return false unless can_add?(opts[:id])
       allow = [:id, :parent_id, :name]
@@ -34,6 +50,9 @@ module YmlBuilder
     # Filter может принимать значения nil или [], тогда считается, что допустимо включение в прайс-лист
     # всех товаров.
     # @param [Array] allow массив id категорий, который должны попадать в результирующий прайс-лист
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.categories.filter = [1, 3, 4, 5]
     def filter=(allow)
       @filter = allow || Array.new
     end
@@ -41,7 +60,7 @@ module YmlBuilder
     # Метод формирует фрагмент YML файла каталога Яндекс.Маркет, содержащий список категорий
     #
     # @param [Integer] ident отступ от левого края в символах
-    # @return [String] фрагмент YML файла каталога Яндекс.Маркет, содержащий список категорий
+    # @return [String] фрагмент YML файла каталога Яндекс.Маркет
     def to_yml(ident = 4)
       out = Array.new
       out << '<categories>'

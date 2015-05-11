@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Набор классов для формирования прайс-листов в формате Яндекс YAML}
   spec.description   = %q{Библиотека содержит набор классов для формирования и валидации прайс-листов
-                          в формате Яндекс YAML (Яндекс.Маркет).
+                          в формате Яндекс YAML (Yandex.Market).
                           Текущая версия поддерживает только упрощенные товарные карточки.}
   spec.homepage      = "https://github.com/StanZhuravlev/yml_builder"
   spec.license       = "MIT"

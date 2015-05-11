@@ -3,15 +3,30 @@
 
 module YmlBuilder
   class Yml
-    # Ссылка на класс, описывающий контакты Интернет-магазина
+    # Ссылка на класс, описывающий контакты Интернет-магазина ({YmlBuilding::Shop})
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.shop.phone = '+7 (123) 456-7890'
     attr_reader :shop
-    # Ссылка на класс, описывающий категории
+    # Ссылка на класс, описывающий категории (YmlBuilding::Categories)
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.categories.add(id: 1, name: "Игрушки")
+    #   price.categories.add(id: 4, name: "Игрушки для девочек", parent_id: 1)
     attr_reader :categories
-    # Ссылка на класс, описывающий валюты
+    # Ссылка на класс, описывающий валюты ({YmlBuilding::Currencies})
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.currencies.rub = 1
+    #   price.currencies.usd = 55.04
+    #   price.currencies.eur = :cbrf
     attr_reader :currencies
-    # Ссылка на класс, управляющий товарами (офферами)
+    # Ссылка на класс, управляющий товарами (офферами) ({YmlBuilding::Offers})
     attr_reader :offers
     # Переменая, хранящая стоимость доставки в локации расположения Интернет-магазина
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.local_delivery_cost = 300
     attr_reader :local_delivery_cost
 
 
@@ -25,7 +40,7 @@ module YmlBuilder
     end
 
     # Метод устанавливает стоимость доставки в месте локации магазина. Например, если магазин находится в Москве,
-    #  то при указанни данной стоимости, она будет показана покупателям в этом же районе.
+    # то при указанни данной стоимости, она будет показана покупателям в этом же районе.
     #
     # @param [Float] value стоимость доставки в месте локации магазина
     # @return [None] нет
@@ -34,9 +49,13 @@ module YmlBuilder
     end
 
     # Метод возвращает статистику по результатам генерации прайс-листа: всего товаров, товаров в наличии, стоимость
-    #  товаров в наличии (без учета количества)
+    # товаров в наличии (без учета количества)
     #
     # @return [None] нет
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.stats                    #=> { :categories => 0, :total => 2, :available => 1, :price => 300.9 }
+    }
     def stats
       @stats.stats
     end
@@ -44,6 +63,9 @@ module YmlBuilder
     # Метод возвращает текстовую строку с прайс-листом в формате Яндекс.Маркет
     #
     # @return [String] строка с прайс-листом в формате utf-8
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.to_yml
     def to_yml
       out = @shop.to_yml
       out.gsub!(/^\s{0,100}\{replace\_currencies\}/, @currencies.to_yml)
@@ -58,6 +80,9 @@ module YmlBuilder
     #
     # @param [String] filename название файла для записи прайс-листа
     # @return [None] нет
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.save('price.yml')
     def save(filename)
       File.open(filename, 'w:windows-1251') {|f| f.write(to_yml) }
     end

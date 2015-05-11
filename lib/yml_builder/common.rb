@@ -1,4 +1,4 @@
-module YmlBuilder
+module YmlBuilder # :nodoc:
   class Common
 
     def self.encode_special_chars(out)

@@ -54,8 +54,8 @@ module YmlBuilder
       if method_sym.to_s.match(/=$/)
         key = method_sym.to_s.gsub(/=$/, '')
         warn "Предупреждение: url не должен превышать 512 символов" if key == 'url' && value.length > 512
-        warn "Предупреждение: price не может быть равен нулю" if key == 'price' && value.to_f == 0
-        warn "Предупреждение: weight не может быть равен нулю" if key == 'weight' && value.to_f == 0
+        warn "Предупреждение: price не может быть равен нулю (offer id #{@id})" if key == 'price' && value.to_f == 0
+        warn "Предупреждение: weight не может быть равен нулю (offer id #{@id})" if key == 'weight' && value.to_f == 0
         @params[key.to_sym] = value
       else
         @params[method_sym.to_s.gsub(/=$/, '').to_sym]
