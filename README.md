@@ -281,7 +281,12 @@ price.save('price.xml')
 структура следующего вида
 
 ```json
-{:categories=>5, :total=>2, :available=>1, :price=>300.9}
+{
+  :categories=>5,
+  :total=>2,
+  :available=>1,
+  :price=>300.9
+}
 ```
 
 
