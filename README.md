@@ -280,12 +280,12 @@ price.save('price.xml')
 наличии (без учета количества)) можно через вызов метода ```ruby price.stats```. Результатом работы метода является
 структура следующего вида
 
-```json
+```ruby
 {
-  :categories=>5,
-  :total=>2,
-  :available=>1,
-  :price=>300.9
+  :categories => 5,
+  :total => 2,
+  :available => 1,
+  :price => 300.9
 }
 ```
 
