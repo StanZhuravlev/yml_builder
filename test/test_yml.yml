@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2015-05-11 14:57">
+  <shop>
+    <name>Магазин ТЕСТ</name>
+    <company>ООО &apos;Рога &amp; Копыта&apos;</company>
+    <url>http://nosite.ru</url>
+    <phone>+7 (123) 456-7890</phone>
+    <platform>OpenCart</platform>
+    <version>2.0</version>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+      <currency id="USD" rate="55.04"/>
+      <currency id="EUR" rate="CBRF"/>
+    </currencies>
+    <categories>
+      <category id="1">Игрушки</category>
+      <category id="2">Одежда</category>
+      <category id="3">Книги</category>
+      <category id="4" parentId="1">Игрушки для девочек</category>
+      <category id="5" parentId="1">Игрушки для мальчиков</category>
+    </categories>
+    <local_delivery_cost>350</local_delivery_cost>
+    <offers>
+      <offer id="3" available="false">
+        <url>http://nosite/items/3</url>
+        <price>100</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>2</categoryId>
+        <picture>http://nosite.ru/image_cover</picture>
+        <picture>http://nosite.ru/image1</picture>
+        <picture>http://nosite.ru/image2</picture>
+        <delivery>true</delivery>
+        <name>Товар №3</name>
+        <param name="Обложка">Мягкая</param>
+        <param name="Страниц" unit="шт.">10</param>
+      </offer>
+      <offer id="6" available="true">
+        <url>http://nosite/items/6</url>
+        <price>300.9</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>http://nosite.ru/image_cover</picture>
+        <picture>http://nosite.ru/image1</picture>
+        <picture>http://nosite.ru/image2</picture>
+        <delivery>true</delivery>
+        <name>Товар №6</name>
+        <param name="Обложка">Мягкая</param>
+        <param name="Страниц" unit="шт.">10</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
