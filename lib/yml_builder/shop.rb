@@ -5,6 +5,35 @@ module YmlBuilder
       init_class
     end
 
+    # Метод формирует фрагмент YML файла каталога Яндекс.Маркет для описания Интернет-магазина
+    #
+    # @return [String] фрагмент YML файла каталога Яндекс.Маркет
+    def to_yml
+      out = Array.new
+      out << '  <shop>'
+
+      @params[:m].each do |key, value|
+        raise "Ошибка секции 'company': не заполнено значение для обязательного ключа #{key.to_s.inspect}" if value == ''
+        out << "    <#{key}>#{::YmlBuilder::Common.encode_special_chars(value)}</#{key}>"
+      end
+
+      @params[:o].each do |key, value|
+        unless value.nil?
+          out << "    <#{key}>#{::YmlBuilder::Common.encode_special_chars(value)}</#{key}>"
+        end
+      end
+
+      out << '    {replace_currencies}'
+      out << '    {replace_categories}'
+      out << '    {replace_local_delivery_cost}'
+      out << '    {replace_offers}'
+      out << '  </shop>'
+      out.join("\n")
+    end
+
+
+    private
+
     def init_class
       @params = Hash.new
 
@@ -41,29 +70,6 @@ module YmlBuilder
       else
         @params[part][method_sym.to_s.gsub(/=$/, '').to_sym]
       end
-    end
-
-    def to_yml
-      out = Array.new
-      out << '  <shop>'
-
-      @params[:m].each do |key, value|
-        raise "Ошибка секции 'company': не заполнено значение для обязательного ключа #{key.to_s.inspect}" if value == ''
-        out << "    <#{key}>#{::YmlBuilder::Common.encode_special_chars(value)}</#{key}>"
-      end
-
-      @params[:o].each do |key, value|
-        unless value.nil?
-          out << "    <#{key}>#{::YmlBuilder::Common.encode_special_chars(value)}</#{key}>"
-        end
-      end
-
-      out << '    {replace_currencies}'
-      out << '    {replace_categories}'
-      out << '    {replace_local_delivery_cost}'
-      out << '    {replace_offers}'
-      out << '  </shop>'
-      out.join("\n")
     end
 
 

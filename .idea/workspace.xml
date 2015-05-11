@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abab4d7b-9d03-4194-9462-89ecc20d0c90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/categories.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/categories.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/common.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/common.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/currencies.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/currencies.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/offer.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/offer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/offers.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/offers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/shop.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/shop.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_yml.yml" afterPath="$PROJECT_DIR$/test/test_yml.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/yml.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/yml.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yml_builder.gemspec" afterPath="$PROJECT_DIR$/yml_builder.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/yml_builder.iml" afterPath="$PROJECT_DIR$/.idea/yml_builder.iml" />
     </list>
     <ignored path="yml_builder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +27,7 @@
     <SUITE FILE_PATH="coverage/yml_builder@_3______yml_builder.coverage" NAME="Пример 3 - Добавление товара: yml_builder Coverage Results" MODIFIED="1431344456438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@___Test__yml_builder.coverage" NAME="Проверка формирования файла Test: yml_builder Coverage Results" MODIFIED="1431092992376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@categories.coverage" NAME="categories Coverage Results" MODIFIED="1431108367249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/yml_builder" MODULE_NAME="yml_builder" />
-    <SUITE FILE_PATH="coverage/yml_builder@____yml_builder.coverage" NAME="Проверка формирования файла: yml_builder Coverage Results" MODIFIED="1431345430450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@____yml_builder.coverage" NAME="Проверка формирования файла: yml_builder Coverage Results" MODIFIED="1431354298573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@_2______Test__yml_builder.coverage" NAME="Пример 2 - Валюта и категории Test: yml_builder Coverage Results" MODIFIED="1431343679821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@Test__test_1_spec_rb___yml_builder.coverage" NAME="Test (test_1_spec.rb): yml_builder Coverage Results" MODIFIED="1431108573978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@IRB_console__yml_builder.coverage" NAME="IRB console: yml_builder Coverage Results" MODIFIED="1431027446612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="yml_builder" />
@@ -44,11 +43,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="yml.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
+      <file leaf-file-name="example_full_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.319202">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -68,32 +87,39 @@
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
+      <file leaf-file-name="offers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="offer_simple.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.037037">
-              <caret line="283" column="0" selection-start-line="283" selection-start-column="0" selection-end-line="288" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="offer_vendor_model.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -101,47 +127,17 @@
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="66" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example_3_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/example_3_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shop.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7107232">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yml_builder.gemspec" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yml_builder.gemspec">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example_2_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/example_2_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="32" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="32" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,14 +161,9 @@
         <option value="$PROJECT_DIR$/lib/yml_builder/company.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/test/test_1.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/currencies.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offer.rb" />
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/test/test_1_spec.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offers.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/shop.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/stats.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/version.rb" />
@@ -183,10 +174,15 @@
         <option value="$PROJECT_DIR$/test/example_3_spec.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/yml_builder.gemspec" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/yml.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/categories.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/common.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/yml.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/currencies.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offer.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offers.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/shop.rb" />
       </list>
     </option>
   </component>
@@ -664,7 +660,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431347367965</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="A few files are commented">
+      <created>1431352808913</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1431352808913</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -805,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/currencies.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -829,54 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -889,14 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -947,30 +885,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -979,18 +893,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="110" selection-start-line="56" selection-start-column="110" selection-end-line="56" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/currencies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="79" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="66" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7107232">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.319202">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding />
         </state>
       </provider>

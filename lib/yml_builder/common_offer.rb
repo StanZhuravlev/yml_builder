@@ -1,29 +1,34 @@
 module YmlBuilder
   class CommonOffer
+    # Уникальный идентификатор товара
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   offer.id = 10
     attr_accessor :id
+    # Уникальный идентификатор типа товара, в соответствии с классификацией Yandex.MArket. Устанавливается в конструкторе
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   puts offer.type                             #=> 'simple'
     attr_accessor :type
+    # Наличие товара на складе
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   puts offer.available = true
     attr_accessor :available
     attr_accessor :bid
 
+    # Список обязательных полей для данного типа оффера
     attr_accessor :mandatories
 
     def initialize
       init_class
     end
 
-    def init_class
-      @params = Hash.new
-      @meta = Hash.new
-      @picture = Array.new
-
-      @id = 0
-      @type = 'unknown'
-      @available = false
-      @bid = nil
-
-      @mandatories = Array.new
-    end
-
+    # Метод добавляет ссылку на фотографию товара в конец списка, и ограничивает список 10-ю фотографиями
+    # @param [String] url ссылка на фотографию товара
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   offer.add_picture('http://example-site.ru/image1.jpg')
     def add_picture(url)
       @picture << url
       @picture.uniq!
@@ -31,6 +36,11 @@ module YmlBuilder
       @picture = @picture[0,9]
     end
 
+    # Метод добавляет ссылку на фотографию товара в начало списка, и ограничивает список 10-ю фотографиями
+    # @param [String] url ссылка на фотографию товара (на основную фотографию)
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   offer.add_cover_picture('http://example-site.ru/cover_image1.jpg')
     def add_cover_picture(url)
       @picture.unshift(url)
       @picture.uniq!
@@ -38,9 +48,44 @@ module YmlBuilder
       @picture = @picture[0,9]
     end
 
+    # Метод добавляет характеристики товара (для секции 'param')
+    #
+    # @param [String] name наименование параметра, например "Количество товара"
+    # @param [String] unit суффикс параметра, например "шт."
+    # @param [Object] value значение параметра
+    # @example Примеры использования
+    #   offer = YmlBuilder::Offer.new('simple')
+    #   offer.add_param(name: "Количество", unit: "шт.", value: 100)
+    #   offer.add_param(name: "Обложка", value: "мягкая")
     def add_param(name:, unit: nil, value:)
       @meta[name] = { unit: unit, value: value}
     end
+
+    # Метод формирует фрагмент YML файла каталога Яндекс.Маркет для одного товара
+    #
+    # @param [Integer] ident отступ от левого края в символах
+    # @return [String] фрагмент YML файла каталога Яндекс.Маркет
+    def to_yml(ident = 4)
+      out = Array.new
+      out << header_line
+
+      @params.each do |key, value|
+        if [:picture, :param].include?(key)
+          out += to_yml_subsections(key)
+        elsif @mandatories.include?(key)
+          out << to_yml_mandatories(key, value)
+        else
+          out << to_yml_optional(key, value)
+        end
+      end
+      out.compact!
+
+      out << footer_line
+      out.map! { |line| ' '.rjust(ident, ' ') + line }
+      out.join("\n")
+    end
+
+    private
 
     def method_missing(method_sym, *arguments, &block)
       if @params.include?(method_sym.to_s.gsub(/=$/, '').to_sym)
@@ -111,24 +156,17 @@ module YmlBuilder
       "  <#{key_xml}>#{::YmlBuilder::Common.encode_special_chars(value)}</#{key_xml}>"
     end
 
-    def to_yml(ident = 4)
-      out = Array.new
-      out << header_line
+    def init_class
+      @params = Hash.new
+      @meta = Hash.new
+      @picture = Array.new
 
-      @params.each do |key, value|
-        if [:picture, :param].include?(key)
-          out += to_yml_subsections(key)
-        elsif @mandatories.include?(key)
-          out << to_yml_mandatories(key, value)
-        else
-          out << to_yml_optional(key, value)
-        end
-      end
-      out.compact!
+      @id = 0
+      @type = 'unknown'
+      @available = false
+      @bid = nil
 
-      out << footer_line
-      out.map! { |line| ' '.rjust(ident, ' ') + line }
-      out.join("\n")
+      @mandatories = Array.new
     end
 
   end

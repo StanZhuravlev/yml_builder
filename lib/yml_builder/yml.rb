@@ -55,7 +55,6 @@ module YmlBuilder
     # @example Примеры использования
     #   price = YmlBuilder::Yml.new
     #   price.stats                    #=> { :categories => 0, :total => 2, :available => 1, :price => 300.9 }
-    }
     def stats
       @stats.stats
     end

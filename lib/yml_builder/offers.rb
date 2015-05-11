@@ -1,3 +1,6 @@
+# Модуль управления карточками товара разного типа. По сути - это класс-массив, в котором
+# хранятся все товары
+
 module YmlBuilder
   class Offers
 
@@ -7,10 +10,12 @@ module YmlBuilder
       init_class
     end
 
-    def init_class
-      @offers = Hash.new
-    end
-
+    # Метод добавляет товар в прайс-лист с учетом выставленных в значении filter настроек.
+    #
+    # @param [{YmlBuilder::CommonOffer}] offer карточка товара
+    # @example Примеры использования
+    #   price = YmlBuilder::Yml.new
+    #   price.offers.add(offer)
     def add(offer)
       return false unless @categories.can_add?(offer.category_id)
       @offers[offer.id] = offer
@@ -24,6 +29,10 @@ module YmlBuilder
       true
     end
 
+    # Метод формирует фрагмент YML файла каталога Яндекс.Маркет для всего списка товаров
+    #
+    # @param [Integer] ident отступ от левого края в символах
+    # @return [String] фрагмент YML файла каталога Яндекс.Маркет
     def to_yml(ident = 4)
       @offers = @offers.sort_by { |id, offer| id }
 
@@ -36,6 +45,14 @@ module YmlBuilder
 
       out.map! { |line| ' '.rjust(ident, ' ') + line }
       out.join("\n")
+    end
+
+
+    private
+
+
+    def init_class
+      @offers = Hash.new
     end
 
   end

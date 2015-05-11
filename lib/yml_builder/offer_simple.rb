@@ -1,4 +1,4 @@
-module YmlBuilder
+module YmlBuilder # :nodoc:
   class OfferSimple < YmlBuilder::CommonOffer
 
     def initialize
