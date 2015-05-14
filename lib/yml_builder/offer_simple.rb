@@ -8,6 +8,7 @@ module YmlBuilder # :nodoc:
       @params = Hash.new
       @params[:url] = nil
       @params[:price] = nil
+      @params[:oldprice] = nil
       @params[:currency_id] = nil
       @params[:category_id] = nil
       @params[:market_category] = nil

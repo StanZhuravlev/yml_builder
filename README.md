@@ -299,6 +299,13 @@ price.save('price.xml')
 }
 ```
 
+Узнать список обязательных полей для конкретного типа товара.
+
+```ruby
+offer = YmlBuilder::Offer.new('simple')
+offer.mandatories                           #=> [:url, :price, :currency_id, :category_id, :delivery, :name]
+```
+
 
 
 ## Contributing
