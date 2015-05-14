@@ -23,8 +23,8 @@ module YmlBuilder
     # @return [Boolean] true, если категория была добавлена, и false, если добавление запрещено в filter
     # @example Примеры использования
     #   price = YmlBuilder::Yml.new
-    #   price.categories.add(id: 1, 'Игрушки')
-    #   price.categories.add(id: 2, 'Игрушки для девочек', parent_id: 1)
+    #   price.categories.add(id: 1, name: 'Игрушки')
+    #   price.categories.add(id: 2, name: 'Игрушки для девочек', parent_id: 1)
     def add(opts = {})
       return false unless can_add?(opts[:id])
       allow = [:id, :parent_id, :name]
@@ -78,6 +78,14 @@ module YmlBuilder
 
       out.map! { |line| line = ' '.rjust(ident, ' ') + line }
       out.join("\n")
+    end
+
+    # Метод возвращает true, если категория, передаваемая в качестве параметра, уже добавлена в прайс-лист
+    #
+    # @param [Object] id идентификатор категории
+    # @return [Boolean] true, если категория с заданным id уже была добавлена в прайс-лист
+    def has?(id)
+      @params[id].nil? ? false : true
     end
 
     private

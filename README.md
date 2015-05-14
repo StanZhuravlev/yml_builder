@@ -111,6 +111,16 @@ price.categories.add(id: 3, name: "Книги")
 puts price.to_yml
 ```
 
+Кстати, чтобы проверить, что категория в прайс-листе уже была добавлена ранее, можно использовать метод `has?`, передав
+в качестве аргумента идентификатор категории.
+
+```ruby
+price.categories.add(id: 1, name: "Игрушки")
+price.categories.add(id: 2, name: "Одежда")
+price.categories.has?(1)                        #=> true
+price.categories.has?(3)                        #=> false
+```
+
 Результатом данного кода будет являться сгенерированная XML-сруктура следующего вида.
 
 ```xml
