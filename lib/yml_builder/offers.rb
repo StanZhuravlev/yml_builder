@@ -5,10 +5,11 @@ module YmlBuilder
   class Offers
 
     def initialize(stats, categories)
-      @stats = stats
+      @stats      = stats
       @categories = categories
       init_class
     end
+
 
     # Метод добавляет товар в прайс-лист с учетом выставленных в значении filter настроек.
     #
@@ -29,6 +30,7 @@ module YmlBuilder
       true
     end
 
+
     # Метод формирует фрагмент YML файла каталога Яндекс.Маркет для всего списка товаров
     #
     # @param [Integer] ident отступ от левого края в символах
@@ -37,13 +39,19 @@ module YmlBuilder
       @offers = @offers.sort_by { |id, offer| id }
 
       out = Array.new
-      out << "<offers>"
-      @offers.each do |id, offer|
-        out += offer.to_yml(2).split(/[\n\r]/)
+      idx = 1
+      out << add_ident("<offers>", ident)
+      @offers.each do |_, offer|
+        # Формируем один товар в YAML, разбиваем на строки, чтобы к каждой
+        # добавить нужное количество пробелов для формирования корректного
+        # YAML-файла
+        arr = offer.to_yml(2).split(/[\n\r]/)
+        arr.map! { |line| add_ident(line, ident) }
+        out << arr.join("\n")
+        # puts "#{idx}/#{@offers.count}" if idx % 1000 == 0
+        idx += 1
       end
-      out << "</offers>"
-
-      out.map! { |line| ' '.rjust(ident, ' ') + line }
+      out << add_ident("</offers>", ident)
       out.join("\n")
     end
 
@@ -51,9 +59,14 @@ module YmlBuilder
     private
 
 
-    def init_class
-      @offers = Hash.new
-    end
+      def add_ident(str, ident)
+        ' '.rjust(ident, ' ') + str
+      end
+
+
+      def init_class
+        @offers = Hash.new
+      end
 
   end
 end

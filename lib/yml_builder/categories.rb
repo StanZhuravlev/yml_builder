@@ -9,10 +9,12 @@ module YmlBuilder
     #   price.categories.filter = [1, 3, 4, 5]
     attr_reader :filter
 
+
     def initialize(stats)
       @stats = stats
       init_class
     end
+
 
     # Метод добавляет категорию Интернет-магазина в прайс-лист с учетом выставленных в значении filter настроек.
     #
@@ -32,10 +34,11 @@ module YmlBuilder
       raise "Ошибка: не указан 'id' для добавления категории" if opts[:id].nil?
       raise "Ошибка: не указан 'name' для добавления категории" if opts[:name].nil?
       @params[opts[:id]] = { parent_id: opts[:parent_id], name: opts[:name] }
-      @params = Hash[ @params.sort_by { |id, data| id } ]
+      @params            = Hash[@params.sort_by { |id, data| id }]
       @stats.add(:categories, 1)
       true
     end
+
 
     # Метод проверяет необходимость добавления категории или товара в прайс-лист
     # с учетом выставленных в значении filter настроек.
@@ -45,6 +48,7 @@ module YmlBuilder
     def can_add?(id)
       @filter.count == 0 ? true : @filter.include?(id)
     end
+
 
     # Метод позволяет огарничить формирование прайс-листа только категориями, указанными в данном поле
     # Filter может принимать значения nil или [], тогда считается, что допустимо включение в прайс-лист
@@ -56,6 +60,7 @@ module YmlBuilder
     def filter=(allow)
       @filter = allow || Array.new
     end
+
 
     # Метод формирует фрагмент YML файла каталога Яндекс.Маркет, содержащий список категорий
     #
@@ -80,6 +85,7 @@ module YmlBuilder
       out.join("\n")
     end
 
+
     # Метод возвращает true, если категория, передаваемая в качестве параметра, уже добавлена в прайс-лист
     #
     # @param [Object] id идентификатор категории
@@ -88,12 +94,14 @@ module YmlBuilder
       @params[id].nil? ? false : true
     end
 
+
     private
 
-    def init_class
-      @params = Hash.new
-      self.filter = nil
-    end
+
+      def init_class
+        @params     = Hash.new
+        self.filter = nil
+      end
 
   end
 end

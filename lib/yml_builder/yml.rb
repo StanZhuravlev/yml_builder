@@ -31,13 +31,14 @@ module YmlBuilder
 
 
     def initialize
-      @stats = ::YmlBuilder::Stats.new
-      @shop = ::YmlBuilder::Shop.new
-      @currencies = ::YmlBuilder::Currencies.new
-      @categories = ::YmlBuilder::Categories.new(@stats)
-      @offers = ::YmlBuilder::Offers.new(@stats, @categories)
+      @stats               = ::YmlBuilder::Stats.new
+      @shop                = ::YmlBuilder::Shop.new
+      @currencies          = ::YmlBuilder::Currencies.new
+      @categories          = ::YmlBuilder::Categories.new(@stats)
+      @offers              = ::YmlBuilder::Offers.new(@stats, @categories)
       @local_delivery_cost = nil
     end
+
 
     # Метод устанавливает стоимость доставки в месте локации магазина. Например, если магазин находится в Москве,
     # то при указанни данной стоимости, она будет показана покупателям в этом же районе.
@@ -47,6 +48,7 @@ module YmlBuilder
     def local_delivery_cost=(value)
       @local_delivery_cost = value
     end
+
 
     # Метод возвращает статистику по результатам генерации прайс-листа: всего товаров, товаров в наличии, стоимость
     # товаров в наличии (без учета количества)
@@ -58,6 +60,7 @@ module YmlBuilder
     def stats
       @stats.stats
     end
+
 
     # Метод возвращает текстовую строку с прайс-листом в формате Яндекс.Маркет
     #
@@ -75,6 +78,7 @@ module YmlBuilder
       add_header_footer(out)
     end
 
+
     # Метод для записи прайслиста в файл. Запись осущесствится в кодировке windows-1251
     #
     # @param [String] filename название файла для записи прайс-листа
@@ -83,25 +87,28 @@ module YmlBuilder
     #   price = YmlBuilder::Yml.new
     #   price.save('price.yml')
     def save(filename)
-      File.open(filename, 'w:windows-1251') {|f| f.write(to_yml) }
+      File.open(filename, 'w:windows-1251') { |f| f.write(to_yml) }
     end
+
 
     private
 
-    def add_header_footer(text)
-      out = Array.new
-      out << "<?xml version=\"1.0\" encoding=\"windows-1251\"?>"
-      out << "<!DOCTYPE yml_catalog SYSTEM \"shops.dtd\">"
-      out << "<yml_catalog date=#{::Time.now.strftime("%Y-%m-%d %H:%M").inspect}>"
-      out << text
-      out << "</yml_catalog>"
-      out.join("\n")
-    end
 
-    def lds_to_yml(ident = 4)
-      return "" if @local_delivery_cost.nil?
-      ' '.rjust(ident, ' ') + "<local_delivery_cost>#{@local_delivery_cost}</local_delivery_cost>\n"
-    end
+      def add_header_footer(text)
+        out = Array.new
+        out << "<?xml version=\"1.0\" encoding=\"windows-1251\"?>"
+        out << "<!DOCTYPE yml_catalog SYSTEM \"shops.dtd\">"
+        out << "<yml_catalog date=#{::Time.now.strftime("%Y-%m-%d %H:%M").inspect}>"
+        out << text
+        out << "</yml_catalog>"
+        out.join("\n")
+      end
+
+
+      def lds_to_yml(ident = 4)
+        return "" if @local_delivery_cost.nil?
+        ' '.rjust(ident, ' ') + "<local_delivery_cost>#{@local_delivery_cost}</local_delivery_cost>\n"
+      end
 
   end
 end

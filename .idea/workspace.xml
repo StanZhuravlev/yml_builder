@@ -1,11 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abab4d7b-9d03-4194-9462-89ecc20d0c90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="$PROJECT_DIR$/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/yml_builder/version.rb" afterPath="$PROJECT_DIR$/lib/yml_builder/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yml_builder.gemspec" afterPath="$PROJECT_DIR$/yml_builder.gemspec" />
+    <list default="true" id="abab4d7b-9d03-4194-9462-89ecc20d0c90" name="Default" comment="Обеспечена совместимость с Rails 5">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/example_4_huge_items_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/diff-lcs-1.3.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rake-12.3.2.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rspec-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rspec-core-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rspec-expectations-3.8.2.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rspec-mocks-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/rspec-support-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/bin/htmldiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/bin/ldiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/bin/rake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/bin/rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/diff-lcs-1.3.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rake-12.3.2.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rspec-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rspec-core-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rspec-expectations-3.8.2.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rspec-mocks-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/cache/rspec-support-3.8.0.gem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/.rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/Code-of-Conduct.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/Contributing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/License.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/Manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/README.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/autotest/discover.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/bin/htmldiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/bin/ldiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/docs/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/docs/artistic.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff-lcs.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/array.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/block.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/callbacks.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/change.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/htmldiff.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/hunk.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/internals.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/ldiff.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/lib/diff/lcs/string.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/change_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/diff_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/fixtures/ds1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/fixtures/ds2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/hunk_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/issues_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/lcs_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/ldiff_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/patch_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/sdiff_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/spec_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/traverse_balanced_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/diff-lcs-1.3/spec/traverse_sequences_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/CONTRIBUTING.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/History.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/MIT-LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/README.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/rake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/rubocop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/bin/setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/command_line_usage.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/example/Rakefile1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/example/Rakefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/example/a.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/example/b.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/example/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/glossary.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/jamis.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/proto_rake.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/rake.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/rakefile.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/doc/rational.rdoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/exe/rake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/application.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/backtrace.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/clean.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/cloneable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/cpu_counter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/default_loader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/dsl_definition.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/early_time.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/ext/core.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/ext/string.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/file_creation_task.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/file_list.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/file_task.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/file_utils.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/file_utils_ext.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/invocation_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/invocation_exception_mixin.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/late_time.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/linked_list.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/loaders/makefile.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/multi_task.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/name_space.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/packagetask.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/phony.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/private_reader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/promise.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/pseudo_status.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/rake_module.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/rake_test_loader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/rule_recursion_overflow_error.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/scope.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/task.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/task_argument_error.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/task_arguments.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/task_manager.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/tasklib.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/testtask.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/thread_history_display.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/thread_pool.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/trace_output.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/lib/rake/win32.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rake-12.3.2/rake.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-3.8.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-3.8.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-3.8.0/lib/rspec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-3.8.0/lib/rspec/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/.document" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/.yardopts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/Changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/exe/rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/autorun.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/backtrace_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/coordinator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/example_minimizer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/fork_runner.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/server.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/shell_command.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/shell_runner.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/bisect/utilities.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration_options.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/drb.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/dsl.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/example.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/example_group.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/example_status_persister.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/filter_manager.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/flat_map.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/base_bisect_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/base_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/base_text_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/bisect_drb_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/bisect_progress_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/console_codes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/deprecation_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/documentation_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/exception_presenter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/fallback_message_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/helpers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/html_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/html_printer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/html_snippet_extractor.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/json_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/profile_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/progress_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/protocol.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/snippet_extractor.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/formatters/syntax_highlighter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/hooks.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/invocations.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/memoized_helpers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/metadata.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/metadata_filter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/minitest_assertions_adapter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/mocking_adapters/flexmock.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/mocking_adapters/mocha.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/mocking_adapters/null.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/mocking_adapters/rr.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/mocking_adapters/rspec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/notifications.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/option_parser.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/ordering.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/output_wrapper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/pending.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/profiler.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/project_initializer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/project_initializer/.rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/project_initializer/spec/spec_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/rake_task.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/reporter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/ruby_project.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/sandbox.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/set.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/shared_context.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/shared_example_group.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/shell_escape.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/test_unit_assertions_adapter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/warnings.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-core-3.8.0/lib/rspec/core/world.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/.document" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/.yardopts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/Changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/block_snippet_extractor.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/configuration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/expectation_target.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/fail_with.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/failure_aggregator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/handler.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/minitest_integration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/syntax.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/expectations/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/aliased_matcher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/all.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/base_matcher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/be.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/be_between.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/be_instance_of.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/be_kind_of.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/be_within.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/change.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/compound.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/contain_exactly.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/cover.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/eq.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/eql.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/equal.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/exist.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/has.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/have_attributes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/include.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/match.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/operators.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/output.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/raise_error.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/respond_to.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/satisfy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/start_or_end_with.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/throw_symbol.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/yield.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/composable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/dsl.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/english_phrasing.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/expecteds_for_multiple_diffs.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/fail_matchers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/generated_descriptions.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/matcher_delegator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/matcher_protocol.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/.document" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/.yardopts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/Changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/error_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/expect_chain_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/expectation_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/message_chains.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/proxy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/recorder.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/stub_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/any_instance/stub_chain_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/argument_list_matcher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/argument_matchers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/configuration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/error_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/example_methods.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/instance_method_stasher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/marshal_extension.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/matchers/expectation_customization.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/matchers/have_received.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/matchers/receive.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/matchers/receive_message_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/matchers/receive_messages.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/message_chain.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/message_expectation.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/method_double.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/method_reference.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/minitest_integration.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/mutate_const.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/object_reference.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/order_group.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/proxy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/space.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/standalone.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/syntax.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/targets.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/test_double.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/verifying_double.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/verifying_message_expectation.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/verifying_proxy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-mocks-3.8.0/lib/rspec/mocks/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/Changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/caller_filter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/comparable_version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/differ.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/directory_maker.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/encoded_string.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/fuzzy_matcher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/hunk_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/matcher_definition.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/method_signature_verifier.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/mutex.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/object_formatter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/recursive_const_methods.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/reentrant_mutex.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/ruby_features.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/source.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/source/location.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/source/node.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/source/token.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/deprecation_helpers.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/formatting_support.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/in_sub_process.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/library_wide_checks.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/shell_out.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/stderr_splitter.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/string_matcher.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/with_isolated_directory.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/spec/with_isolated_stderr.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/gems/rspec-support-3.8.0/lib/rspec/support/warnings.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/diff-lcs-1.3.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rake-12.3.2.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rspec-3.8.0.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rspec-core-3.8.0.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rspec-expectations-3.8.2.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rspec-mocks-3.8.0.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/cache/ruby/2.2.0/specifications/rspec-support-3.8.0.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yml_builder-0.1.4.gem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yml_builder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yml_builder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/common.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/common.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/currencies.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/currencies.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/offers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/offers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/shop.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/shop.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/stats.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/stats.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/yml_builder/yml.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/yml_builder/yml.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_yml.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_yml.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yml_builder.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/yml_builder.gemspec" afterDir="false" />
     </list>
     <ignored path="yml_builder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,106 +382,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/yml_builder@___Test__yml_builder.coverage" NAME="Проверка формирования файла Test: yml_builder Coverage Results" MODIFIED="1431092992376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
-    <SUITE FILE_PATH="coverage/yml_builder@_2______Test__yml_builder.coverage" NAME="Пример 2 - Валюта и категории Test: yml_builder Coverage Results" MODIFIED="1431343679821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
-    <SUITE FILE_PATH="coverage/yml_builder@categories.coverage" NAME="categories Coverage Results" MODIFIED="1431108367249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/yml_builder" MODULE_NAME="yml_builder" />
-    <SUITE FILE_PATH="coverage/yml_builder@____yml_builder.coverage" NAME="Проверка формирования файла: yml_builder Coverage Results" MODIFIED="1431354298573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@Test__test_1_spec_rb___yml_builder.coverage" NAME="Test (test_1_spec.rb): yml_builder Coverage Results" MODIFIED="1431108573978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
-    <SUITE FILE_PATH="coverage/yml_builder@IRB_console__yml_builder.coverage" NAME="IRB console: yml_builder Coverage Results" MODIFIED="1431027446612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@example_4_huge_items.rcov" NAME="example_4_huge_items Coverage Results" MODIFIED="1546457454818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@Run_spec__example_3_spec___yml_builder.rcov" NAME="Run spec 'example_3_spec': yml_builder Coverage Results" MODIFIED="1546458872309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@Run_spec__example_full_spec___yml_builder.rcov" NAME="Run spec 'example_full_spec': yml_builder Coverage Results" MODIFIED="1546459283315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@_1_________yml_builder.coverage" NAME="Пример 1 - Инициация прайс-листа и магазина: yml_builder Coverage Results" MODIFIED="1431342473383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@Run_spec__example_1_spec___yml_builder.rcov" NAME="Run spec 'example_1_spec': yml_builder Coverage Results" MODIFIED="1546459155091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@categories.coverage" NAME="categories Coverage Results" MODIFIED="1431108367249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/yml_builder" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@___Test__yml_builder.coverage" NAME="Проверка формирования файла Test: yml_builder Coverage Results" MODIFIED="1431092992376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@Run_spec__example_4_huge_items_spec___yml_builder.rcov" NAME="Run spec 'example_4_huge_items_spec': yml_builder Coverage Results" MODIFIED="1546459216034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@IRB_console__yml_builder.coverage" NAME="IRB console: yml_builder Coverage Results" MODIFIED="1431027446612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@Run_test__test_1___yml_builder.coverage" NAME="Run test 'test_1': yml_builder Coverage Results" MODIFIED="1431201141944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@____yml_builder.coverage" NAME="Проверка формирования файла: yml_builder Coverage Results" MODIFIED="1431354298573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@_2______Test__yml_builder.coverage" NAME="Пример 2 - Валюта и категории Test: yml_builder Coverage Results" MODIFIED="1431343679821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
+    <SUITE FILE_PATH="coverage/yml_builder@Run_spec__example_2_spec___yml_builder.rcov" NAME="Run spec 'example_2_spec': yml_builder Coverage Results" MODIFIED="1546457350773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
     <SUITE FILE_PATH="coverage/yml_builder@_3______yml_builder.coverage" NAME="Пример 3 - Добавление товара: yml_builder Coverage Results" MODIFIED="1431344456438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="yml_builder" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="yml_builder" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yml_builder.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yml_builder.gemspec" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yml_builder.gemspec">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offer.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offer_simple.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="81" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="81" />
-              <folding />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -125,8 +420,16 @@
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/currencies.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-              <folding />
+              <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_offer.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -134,9 +437,58 @@
       <file leaf-file-name="common.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example_full_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="65" selection-start-line="64" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example_4_huge_items_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/example_4_huge_items_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_yml.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_yml.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="yml.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="offers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -162,32 +514,38 @@
         <option value="$PROJECT_DIR$/LICENSE.txt" />
         <option value="$PROJECT_DIR$/test/test_1_spec.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/stats.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder.rb" />
         <option value="$PROJECT_DIR$/test/example_1_spec.rb" />
         <option value="$PROJECT_DIR$/test/example_2_spec.rb" />
         <option value="$PROJECT_DIR$/test/example_3_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/common.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/yml.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/currencies.rb" />
         <option value="$PROJECT_DIR$/lib/yml_builder/offer.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offers.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/shop.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/categories.rb" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" />
-        <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/yml_builder.gemspec" />
         <option value="$PROJECT_DIR$/lib/yml_builder/version.rb" />
+        <option value="$PROJECT_DIR$/test/example_4_huge_items.rb" />
+        <option value="$PROJECT_DIR$/CHANGELOG.md" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/yml.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/stats.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/shop.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offer_simple.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/currencies.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/common_offer.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/common.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/categories.rb" />
+        <option value="$PROJECT_DIR$/test/example_4_huge_items_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/yml_builder/offers.rb" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="15" />
@@ -195,97 +553,38 @@
     <option name="width" value="1260" />
     <option name="height" value="682" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yml_builder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="yml_builder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yml_builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yml_builder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yml_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yml_builder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yml_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="yml_builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yml_builder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yml_builder" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
@@ -300,39 +599,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="RSpec.Проверка формирования файла: yml_builder">
-    <configuration default="false" name="Run test 'test_1': yml_builder" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-      <module name="yml_builder" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_full_spec.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Проверка формирования файла: yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="RSpec.Run spec 'example_full_spec': yml_builder">
+    <configuration name="Run spec 'example_1_spec': yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="yml_builder" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -345,40 +626,7 @@
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_full_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Проверка формирования файла" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Пример 1 - Инициация прайс-листа и магазина: yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="yml_builder" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
@@ -387,7 +635,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_1_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Пример 1 - Инициация прайс-листа и магазина" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -396,9 +644,8 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
     </configuration>
-    <configuration default="false" name="Пример 2 - Валюта и категории Test: yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Run spec 'example_3_spec': yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="yml_builder" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -411,40 +658,7 @@
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_2_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Пример 2 - Валюта и категории Test" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Пример 3 - Добавление товара: yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="yml_builder" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
@@ -453,7 +667,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_3_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Пример 3 - Добавление товара" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -462,7 +676,87 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
+    </configuration>
+    <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="yml_builder" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_4_huge_items_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
+    <configuration name="Run spec 'example_full_spec': yml_builder" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="yml_builder" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_full_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
+    <configuration name="example_4_huge_items_spec" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="yml_builder" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/test/example_4_huge_items_spec.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
@@ -598,16 +892,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
@@ -615,26 +899,32 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'test_1': yml_builder" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Проверка формирования файла: yml_builder" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.Пример 1 - Инициация прайс-листа и магазина: yml_builder" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.Пример 2 - Валюта и категории Test: yml_builder" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Пример 3 - Добавление товара: yml_builder" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+    </configuration>
+    <list>
+      <item itemvalue="Ruby.example_4_huge_items_spec" />
+      <item itemvalue="RSpec.Run spec 'example_3_spec': yml_builder" />
+      <item itemvalue="RSpec.Run spec 'example_1_spec': yml_builder" />
+      <item itemvalue="RSpec.Run spec 'example_4_huge_items_spec': yml_builder" />
+      <item itemvalue="RSpec.Run spec 'example_full_spec': yml_builder" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Пример 3 - Добавление товара: yml_builder" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Пример 2 - Валюта и категории Test: yml_builder" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Пример 1 - Инициация прайс-листа и магазина: yml_builder" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Проверка формирования файла: yml_builder" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'test_1': yml_builder" />
+      <list>
+        <item itemvalue="RSpec.Run spec 'example_full_spec': yml_builder" />
+        <item itemvalue="RSpec.Run spec 'example_4_huge_items_spec': yml_builder" />
+        <item itemvalue="RSpec.Run spec 'example_1_spec': yml_builder" />
+        <item itemvalue="RSpec.Run spec 'example_3_spec': yml_builder" />
+        <item itemvalue="Ruby.example_4_huge_items_spec" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -645,7 +935,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1431024373769</updated>
-      <workItem from="1464380737087" duration="175000" />
+      <workItem from="1464380737087" duration="999000" />
+      <workItem from="1464727915629" duration="595000" />
+      <workItem from="1465809258943" duration="183000" />
+      <workItem from="1465809475035" duration="20384000" />
+      <workItem from="1466343738973" duration="253000" />
+      <workItem from="1467745488007" duration="593000" />
+      <workItem from="1468580750316" duration="585000" />
+      <workItem from="1468591001640" duration="676000" />
+      <workItem from="1470374699553" duration="590000" />
+      <workItem from="1470420350882" duration="593000" />
+      <workItem from="1546456729689" duration="3110000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1431342820128</created>
@@ -738,39 +1038,82 @@
       <option name="project" value="LOCAL" />
       <updated>1431641824661</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Обеспечена совместимость с Rails 5">
+      <created>1464380950312</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1464380950312</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Run_spec_'example_4_huge_items_spec'__yml_builder - 2019.01.02 at 22h 45m 36s.xml">
+      <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_4_huge_items_spec'__yml_builder - 2019.01.02 at 22h 46m 50s.xml">
+      <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_3_spec'__yml_builder - 2019.01.02 at 22h 47m 18s.xml">
+      <configuration name="Run spec 'example_3_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_3_spec'__yml_builder - 2019.01.02 at 22h 54m 14s.xml">
+      <configuration name="Run spec 'example_3_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_3_spec'__yml_builder - 2019.01.02 at 22h 54m 33s.xml">
+      <configuration name="Run spec 'example_3_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_4_huge_items_spec'__yml_builder - 2019.01.02 at 22h 55m 15s.xml">
+      <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_1_spec'__yml_builder - 2019.01.02 at 22h 59m 16s.xml">
+      <configuration name="Run spec 'example_1_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_4_huge_items_spec'__yml_builder - 2019.01.02 at 22h 59m 49s.xml">
+      <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_4_huge_items_spec'__yml_builder - 2019.01.02 at 23h 00m 56s.xml">
+      <configuration name="Run spec 'example_4_huge_items_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'example_full_spec'__yml_builder - 2019.01.02 at 23h 01m 24s.xml">
+      <configuration name="Run spec 'example_full_spec': yml_builder" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175000" />
+    <option name="totallyTimeSpent" value="28561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="33" width="1260" height="682" extended-state="0" />
-    <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3286385" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32936507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29638752" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Duplicates" order="7" weight="0.3286385" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.3286385" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -788,318 +1131,263 @@
     <MESSAGE value="Minor changes due initial commit" />
     <MESSAGE value="A few files are commented" />
     <MESSAGE value="See a CHANGELOG.md, version 0.1.1 section" />
-    <option name="LAST_COMMIT_MESSAGE" value="See a CHANGELOG.md, version 0.1.1 section" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <MESSAGE value="Обеспечена совместимость с Rails 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обеспечена совместимость с Rails 5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/example_2_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="32" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="107" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="29" column="81" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/currencies.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/example_1_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
-          <folding />
+        <state>
+          <caret line="16" column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/example_2_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="305" column="47" selection-start-line="305" selection-start-column="47" selection-end-line="305" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="29" column="81" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state>
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="79" column="179" selection-start-line="79" selection-start-column="179" selection-end-line="79" selection-end-column="179" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_yml.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_yml.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/example_3_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="56" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state>
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state>
           <caret line="305" column="47" selection-start-line="305" selection-start-column="47" selection-end-line="305" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yml_builder.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/example_2_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/example_3_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/example_1_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
-          <folding />
+          <caret line="16" column="3" selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/example_2_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/stats.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="32" />
-          <folding />
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="107" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="-3">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_vendor_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1107,82 +1395,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/shop.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offer_simple.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="81" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/currencies.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
-          <folding />
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/common_offer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/yml_builder/common.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yml_builder.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/categories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/example_full_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="65" selection-start-line="64" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_yml.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="LargeFileEditor">
+        <state relative-caret-position="780">
+          <caret line="52" column="14" lean-forward="true" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/example_4_huge_items_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/yml.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/yml_builder/offers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/yml_builder/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

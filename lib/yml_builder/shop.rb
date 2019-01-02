@@ -5,6 +5,7 @@ module YmlBuilder
       init_class
     end
 
+
     # Метод формирует фрагмент YML файла каталога Яндекс.Маркет для описания Интернет-магазина
     #
     # @return [String] фрагмент YML файла каталога Яндекс.Маркет
@@ -34,43 +35,46 @@ module YmlBuilder
 
     private
 
-    def init_class
-      @params = Hash.new
 
-      @params[:m] = Hash.new
-      @params[:m][:name] = ''
-      @params[:m][:company] = ''
-      @params[:m][:url] = ''
+      def init_class
+        @params = Hash.new
 
-      @params[:o] = Hash.new
-      @params[:o][:phone] = nil
-      @params[:o][:platform] = nil
-      @params[:o][:version] = nil
-      @params[:o][:agency] = nil
-      @params[:o][:email] = nil
-      @params[:o][:adult] = nil
-      @params[:o][:cpa] = nil
-    end
+        @params[:m]           = Hash.new
+        @params[:m][:name]    = ''
+        @params[:m][:company] = ''
+        @params[:m][:url]     = ''
 
-    def method_missing(method_sym, *arguments, &block)
-      if @params[:m].include?(method_sym.to_s.gsub(/=$/, '').to_sym)
-        processing_method(:m, method_sym, arguments.first)
-      elsif @params[:o].include?(method_sym.to_s.gsub(/=$/, '').to_sym)
-        processing_method(:o, method_sym, arguments.first)
-      else
-        super
+        @params[:o]            = Hash.new
+        @params[:o][:phone]    = nil
+        @params[:o][:platform] = nil
+        @params[:o][:version]  = nil
+        @params[:o][:agency]   = nil
+        @params[:o][:email]    = nil
+        @params[:o][:adult]    = nil
+        @params[:o][:cpa]      = nil
       end
-    end
 
-    def processing_method(part, method_sym, value)
-      if method_sym.to_s.match(/=$/)
-        key = method_sym.to_s.gsub(/=$/, '')
-        warn "Предупреждение: название магазина не должно быть больше 20 символов" if key == 'name' && value.length > 20
-        @params[part][key.to_sym] = value
-      else
-        @params[part][method_sym.to_s.gsub(/=$/, '').to_sym]
+
+      def method_missing(method_sym, *arguments, &block)
+        if @params[:m].include?(method_sym.to_s.gsub(/=$/, '').to_sym)
+          processing_method(:m, method_sym, arguments.first)
+        elsif @params[:o].include?(method_sym.to_s.gsub(/=$/, '').to_sym)
+          processing_method(:o, method_sym, arguments.first)
+        else
+          super
+        end
       end
-    end
+
+
+      def processing_method(part, method_sym, value)
+        if method_sym.to_s.match(/=$/)
+          key = method_sym.to_s.gsub(/=$/, '')
+          warn "Предупреждение: название магазина не должно быть больше 20 символов" if key == 'name' && value.length > 20
+          @params[part][key.to_sym] = value
+        else
+          @params[part][method_sym.to_s.gsub(/=$/, '').to_sym]
+        end
+      end
 
 
   end
