@@ -1,3 +1,10 @@
+# IDEA and Mac OS X
+.DS_Store
+*.iml
+.idea
+out
+
+# Ruby files
 /.bundle/
 /.yardoc
 /Gemfile.lock
