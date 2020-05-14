@@ -87,7 +87,7 @@ module YmlBuilder
     #   price = YmlBuilder::Yml.new
     #   price.save('price.yml')
     def save(filename)
-      File.open(filename, 'w:windows-1251') { |f| f.write(to_yml) }
+      File.open(filename, 'w:utf-8') { |f| f.write(to_yml) }
     end
 
 
@@ -96,7 +96,7 @@ module YmlBuilder
 
       def add_header_footer(text)
         out = Array.new
-        out << "<?xml version=\"1.0\" encoding=\"windows-1251\"?>"
+        out << "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
         out << "<!DOCTYPE yml_catalog SYSTEM \"shops.dtd\">"
         out << "<yml_catalog date=#{::Time.now.strftime("%Y-%m-%d %H:%M").inspect}>"
         out << text
