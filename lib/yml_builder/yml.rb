@@ -28,6 +28,8 @@ module YmlBuilder
     #   price = YmlBuilder::Yml.new
     #   price.local_delivery_cost = 300
     attr_reader :local_delivery_cost
+    
+    attr_reader :encoding
 
 
     def initialize
@@ -36,6 +38,7 @@ module YmlBuilder
       @currencies          = ::YmlBuilder::Currencies.new
       @categories          = ::YmlBuilder::Categories.new(@stats)
       @offers              = ::YmlBuilder::Offers.new(@stats, @categories)
+      @encoding           ||='UTF-8'
       @local_delivery_cost = nil
     end
 
@@ -87,7 +90,7 @@ module YmlBuilder
     #   price = YmlBuilder::Yml.new
     #   price.save('price.yml')
     def save(filename)
-      File.open(filename, 'w:windows-1251') { |f| f.write(to_yml) }
+      File.open(filename, "w:#{@encoding}") { |f| f.write(to_yml) }
     end
 
 
@@ -96,7 +99,7 @@ module YmlBuilder
 
       def add_header_footer(text)
         out = Array.new
-        out << "<?xml version=\"1.0\" encoding=\"windows-1251\"?>"
+        out << "<?xml version=\"1.0\" encoding=\"#{@encoding}\"?>"
         out << "<!DOCTYPE yml_catalog SYSTEM \"shops.dtd\">"
         out << "<yml_catalog date=#{::Time.now.strftime("%Y-%m-%d %H:%M").inspect}>"
         out << text
